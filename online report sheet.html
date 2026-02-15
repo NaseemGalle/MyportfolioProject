@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<base target="_top">
+
+<style>
+body{
+  font-family:Arial;
+  background:#eef3ff;
+  text-align:center;
+  padding-top:60px;
+}
+
+h2{
+  margin-bottom:30px;
+}
+
+.btn{
+  display:block;
+  width:260px;
+  margin:15px auto;
+  padding:15px;
+  background:#28a745;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  font-size:18px;
+}
+
+.logout{
+  background:#dc3545;
+}
+</style>
+</head>
+
+<body>
+
+<h2>✅ Student Dashboard</h2>
+
+<!-- BUTTON 1 -->
+<a class="btn"
+href="https://script.google.com/macros/s/AKfycbwW064fRzji9E0Z6hPsXbxnm8KABSHDdrL6yFchH4i8z42O6Qrbnpo27Yq2TuUKUscXfA/exec"
+target="_blank">
+▶ Grade 10 & 11 Student Online Report
+</a>
+
+<!-- BUTTON 2 -->
+<a class="btn"
+href="https://script.google.com/macros/s/AKfycbzzYf1uAYkrppLYG0oAgn9aVbY8QB6sY7Oj8l5HiUXUG7JU9p8Zf1GXM4mC248uVdDV/exec"
+target="_blank">
+▶ Grade 06 To 09 Student Online Report
+</a>
+
+<br>
+
+<button class="btn logout" onclick="logout()">
+🚪 Logout
+</button>
+
+<script>
+function logout(){
+  const baseUrl = window.location.href.split("?")[0];
+  window.top.location.href = baseUrl;
+}
+</script>
+
+</body>
+</html>
